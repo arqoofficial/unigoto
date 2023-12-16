@@ -23,107 +23,30 @@
 ## Project structure
 ```shell
 .
-│   .gitignore
-│   docker-compose.local.yml
-│   docker-compose.yml
-│   pyproject.toml
-│   README.md
-│   requirements-dev.txt
-│
 ├───configs
 │   ├───dev
-│   │   │   .env
-│   │   │
 │   │   ├───h-data-pg
 │   │   │   └───docker-entrypoint-initdb.d
-│   │   │           0_initial_postgresql.sql
-│   │   │
 │   │   └───nginx
-│   │       │   nginx.conf
-│   │       │
 │   │       └───conf.d
-│   │               h.conf
-│   │
 │   └───local
-│       │   .env
-│       │
 │       ├───h-data-pg
 │       │   └───docker-entrypoint-initdb.d
-│       │           0_initial_postgresql.sql
-│       │
 │       └───nginx
-│           │   nginx.conf
-│           │
 │           └───conf.d
-│                   h.conf
-│
 ├───img
-│       airflow.png
-│       architecture.png
-│
 ├───src
 │   ├───airflow
-│   │   │   Dockerfile
-│   │   │   requirements-dev.txt
-│   │   │   requirements.txt
-│   │   │   __init__.py
-│   │   │
 │   │   └───dags
-│   │       │   __init__.py
-│   │       │
 │   │       └───h_dags
-│   │               data_transformation.py
-│   │               h_dags.py
-│   │               __init__.py
-│   │
 │   ├───api
-│   │   │   .dockerignore
-│   │   │   .gitignore
-│   │   │   config.py
-│   │   │   Dockerfile
-│   │   │   main.py
-│   │   │   models.py
-│   │   │   pyproject.toml
-│   │   │   requirements.txt
-│   │   │   utils.py
-│   │   │
 │   │   └───api
-│   │       │   router.py
-│   │       │   schemas.py
-│   │       │   __init__.py
-│   │       │
 │   │       └───endpoints
-│   │               ping.py
-│   │               search.py
-│   │               __init__.py
-│   │
 │   ├───client
-│   │       config.py
-│   │       Dockerfile
-│   │       requirements.txt
-│   │       unigoto.py
-│   │
 │   ├───data_collector
-│   │   │   config.py
-│   │   │   Dockerfile
-│   │   │   models.py
-│   │   │   requirements.txt
-│   │   │   __main__.py
-│   │   │
 │   │   └───scripts
-│   │           init_db_tables.py
-│   │           __init__.py
-│   │
 │   └───workers
-│           config.py
-│           Dockerfile
-│           models.py
-│           requirements-dev.txt
-│           requirements.txt
-│           transformator.py
-│
 └───volumes
-        .gitkeep
 ```
 
 # Dev
