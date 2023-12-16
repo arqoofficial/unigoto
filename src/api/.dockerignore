@@ -1,0 +1,34 @@
+# Ignore Docker build files
+**/Dockerfile
+.dockerignore
+/docker
+.*
+requirements-dev.txt
+
+# Ignore OS artifacts
+**/.DS_Store
+__pycache__
+.idea
+*.pyc
+
+#Python best practice
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
